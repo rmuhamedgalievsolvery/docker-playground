@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  volume_hello:
+    build: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - hello_volume:/usr/share/hello
+volumes:
+  hello_volume:
